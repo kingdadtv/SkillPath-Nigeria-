@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Career Path Recommendations | SkillPath Nigeria</title>
+    <meta name="description" content="View your personalized career path recommendation and skill roadmap.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="results-body">
+
+    <!-- Header Navigation -->
+    <header class="results-header">
+        <a href="index.html" class="logo">SkillPath Nigeria</a>
+        <nav class="results-nav" aria-label="Results Page Navigation">
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Career Quiz</a>
+            <a href="#resources">Resources</a>
+            <a href="#three-mtt">3MTT</a>
+        </nav>
+        <div class="results-label">Your Career Results</div>
+    </header>
+
+    <!-- Main Results Section -->
+    <main class="results-container">
+        <section class="results-intro">
+            <div class="results-label-small">YOUR PERSONALIZED CAREER PATH</div>
+            <h1>Your Results Are Ready 🎉</h1>
+            <p>Based on your answers, we have identified a career path that aligns best with your interests, strengths, and future goals.</p>
+        </section>
+        <!-- Primary Recommended Career -->
+        <section class="career-result-card" aria-labelledby="topCareer">
+            <div class="result-badge">🏆 Top Career Match</div>
+            <h2 id="topCareer">Content Creation</h2>
+            
+            <div class="match-score">
+                <span id="matchPercentage">83%</span>
+                <p>Match</p>
+            </div>
+
+            <p id="careerDescription">
+                Your answers suggest that you enjoy creativity, communication, storytelling, and digital media production. Content creation is a strong career match for you.
+            </p>
+        </section>
+
+        <!-- Fitting Rationale -->
+        <section class="result-section">
+            <div class="section-icon" aria-hidden="true">💡</div>
+            <h2>Why This Career Fits You</h2>
+            <p id="careerReason">
+                You showed high interest in creative activities, digital media platforms, and expressing engaging ideas.
+            </p>
+        </section>
+
+        <!-- Recommended Skills Grid -->
+        <section class="result-section">
+            <div class="section-icon" aria-hidden="true">🛠️</div>
+            <h2>Skills You Should Learn</h2>
+            <p>Developing these skills will give you a competitive edge in the industry.</p>
+            <div class="skills-grid" id="careerSkills">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </section>
+
+        <!-- Career Learning Steps -->
+        <section class="result-section">
+            <div class="section-icon" aria-hidden="true">🗺️</div>
+            <h2>Your Learning Roadmap</h2>
+            <p>Follow these structured steps to progress effectively.</p>
+            <div class="roadmap" id="careerRoadmap">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </section>
+        <!-- Resource Recommendations -->
+        <section class="result-section resources-section" id="resources">
+            <div class="section-icon" aria-hidden="true">📚</div>
+            <h2>Recommended Learning Resources</h2>
+            <p>Explore curated learning platforms to accelerate your growth.</p>
+
+            <div class="resources-grid">
+                <article class="resource-card free-resource">
+                    <div class="resource-icon" aria-hidden="true">🆓</div>
+                    <h3>Free Resources</h3>
+                    <p>Learn from structured open courses, tutorials, and community hubs.</p>
+                    <a href="https://www.freecodecamp.org/learn/" class="resource-button" target="_blank" rel="noopener noreferrer">Explore Free Resources &rarr;</a>
+                </article>
+
+                <article class="resource-card paid-resource">
+                    <div class="resource-icon" aria-hidden="true">💳</div>
+                    <h3>Paid Resources</h3>
+                    <p>Access structured courses with certificates and professional mentorship.</p>
+                    <a href="https://www.udemy.com/" class="resource-button" target="_blank" rel="noopener noreferrer">Explore Paid Resources &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3MTT Integration Section -->
+        <section class="three-mtt-section" id="three-mtt">
+            <div class="three-mtt-content">
+                <div class="three-mtt-icon" aria-hidden="true">🇳🇬</div>
+                <div>
+                    <h2>Continue Learning with 3MTT</h2>
+                    <p>Explore technical skills and government-backed opportunities via the 3MTT initiative.</p>
+                    <a href="https://3mtt.nitda.gov.ng/" class="primary-button" target="_blank" rel="noopener noreferrer">Explore 3MTT Skills &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Matches -->
+        <section class="result-section other-careers-section">
+            <div class="section-icon" aria-hidden="true">🎯</div>
+            <h2>Other Career Matches</h2>
+            <p>Alternative pathways that match your broader interest profile.</p>
+            <div id="otherCareerMatches" class="other-careers-grid">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </section>
+
+        <!-- Reset Action -->
+        <section class="restart-section">
+            <h2>Want to Explore Another Path?</h2>
+            <p>Retake the assessment to explore alternative career options.</p>
+            <a href="quiz.html" class="restart-button">Take the Quiz Again</a>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="results-footer">
+        <div class="footer-content">
+            <div>
+                <h3>SkillPath Nigeria</h3>
+                <p>Helping Nigerians discover digital career paths and build future-ready skills.</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <a href="index.html">Home</a>
+                <a href="quiz.html">Career Quiz</a>
+                <a href="#resources">Resources</a>
+                <a href="#three-mtt">3MTT</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SkillPath Nigeria. All rights reserved.</p>
+            <p>Built by <strong>Ahmad Kabiru</strong> 💻</p>
+        </div>
+    </footer>
+
+    <!-- Logic Engine -->
+    <script src="script.js"></script>
+</body>
+</html>

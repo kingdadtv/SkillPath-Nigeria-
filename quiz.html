@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment Quiz | SkillPath Nigeria</title>
+    <meta name="description" content="Take our interactive assessment to discover your ideal tech career path in Nigeria.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-body">
+
+    <!-- Header Section -->
+    <header class="quiz-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">SkillPath Nigeria</a>
+            <div class="quiz-progress" aria-live="polite">
+                <span id="questionNumber">Question 1</span>
+                <span>of 8</span>
+            </div>
+        </div>
+    </header>
+    <!-- Main Quiz Interface -->
+    <main class="quiz-container">
+        <div class="quiz-card" role="region" aria-label="Career Quiz Panel">
+            
+            <!-- Progress Tracker -->
+            <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill" id="progressFill" style="width: 12.5%;"></div>
+            </div>
+
+            <!-- Interactive Question Box -->
+            <div class="question-section">
+                <p class="question-label">Let's get to know you</p>
+                <h1 id="question">What type of activities do you enjoy most?</h1>
+
+                <!-- Answer Options -->
+                <div class="options" id="options" role="radiogroup" aria-label="Quiz Answer Options">
+                    <button type="button" class="option" data-value="dev">
+                        <span>Building things and solving problems</span>
+                    </button>
+                    <button type="button" class="option" data-value="media">
+                        <span>Creating videos, graphics, or other content</span>
+                    </button>
+                    <button type="button" class="option" data-value="it">
+                        <span>Working with computers and technology</span>
+                    </button>
+                    <button type="button" class="option" data-value="data">
+                        <span>Understanding data and finding patterns</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="quiz-navigation">
+                <button type="button" class="back-btn" id="backBtn" disabled>Back</button>
+                <button type="button" class="next-btn" id="nextBtn">Next</button>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <footer class="quiz-footer">
+        <p>&copy; 2026 SkillPath Nigeria. All rights reserved.</p>
+    </footer>
+
+    <!-- Core Logic -->
+    <script src="script.js"></script>
+</body>
+</html>

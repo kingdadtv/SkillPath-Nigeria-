@@ -1,0 +1,513 @@
+/* =========================================================
+   SkillPath Nigeria - Complete Responsive Styles
+   ========================================================= */
+
+/* --- ROOT VARIABLES --- */
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-dark: #0f172a;
+    --bg-light: #f1f5f9;
+    --text-main: #1f2937;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --white: #ffffff;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --transition: all 0.3s ease;
+}
+
+/* --- GLOBAL RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* --- MAIN HEADER & NAVBAR --- */
+.site-header {
+    background-color: var(--bg-dark);
+    color: var(--white);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--white);
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: var(--white);
+    border: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    background-color: var(--bg-dark);
+    padding: 50px 20px 60px;
+    text-align: center;
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-label {
+    margin-bottom: 15px;
+    color: #93c5fd;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.primary-button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* --- QUIZ INTERFACE STYLES --- */
+.quiz-header {
+    background-color: var(--bg-dark);
+    color: var(--white);
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.quiz-progress {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+.quiz-card {
+    background-color: var(--white);
+    padding: 35px 25px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.progress-fill {
+    width: 12.5%;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.question-label {
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.question-section h1 {
+    color: var(--bg-dark);
+    font-size: 1.6rem;
+    line-height: 1.35;
+    margin-bottom: 25px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.options .option {
+    width: 100%;
+    display: block;
+    text-align: left;
+    background-color: #f8fafc;
+    color: var(--bg-dark);
+    border: 2px solid var(--border-color);
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.options .option:hover {
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+}
+
+.options .option.selected {
+    background-color: #dbeafe;
+    border-color: var(--primary);
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.back-btn, .next-btn {
+    width: auto;
+    min-width: 110px;
+}
+
+.back-btn {
+    background-color: var(--border-color);
+    color: var(--bg-dark);
+}
+
+.next-btn {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* --- RESULTS STYLES --- */
+.results-header {
+    min-height: 70px;
+    background-color: var(--bg-dark);
+    color: var(--white);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.results-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.results-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 15px 60px;
+}
+
+.career-result-card {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: var(--white);
+    padding: 40px 20px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.result-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.career-result-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+.match-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 20px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 4px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+.match-score span {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.result-section {
+    background-color: var(--white);
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.skill-item {
+    background: linear-gradient(145deg, #f8fafc, #eff6ff);
+    border: 1px solid #dbeafe;
+    padding: 18px;
+    border-radius: var(--radius-md);
+}
+
+.roadmap {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.roadmap-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.roadmap-step > span {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+/* --- FOOTER --- */
+.results-footer, .quiz-footer, .site-footer {
+    background-color: var(--bg-dark);
+    color: var(--white);
+    padding: 40px 20px 25px;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-bottom {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* --- MOBILE & TABLET RESPONSIVENESS FIXES --- */
+@media (max-width: 768px) {
+    .nav-links, .results-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active, .results-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-dark);
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer-content, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .primary-button, .back-btn, .next-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quiz-navigation {
+        flex-direction: column-reverse;
+    }
+}
+/* --- FORCE SECTION SEPARATION FIX --- */
+.hero + section,
+.hero + div,
+main section:nth-child(2),
+.features,
+.how-it-works {
+    margin-top: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    clear: both !important;
+    z-index: 1;
+}
